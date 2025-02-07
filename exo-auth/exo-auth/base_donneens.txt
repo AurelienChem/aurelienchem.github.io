@@ -1,0 +1,13 @@
+CREATE TABLE tbl_users 
+(
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
+    `username` VARCHAR(50) UNIQUE NOT NULL,
+    `password` VARCHAR(128) NOT NULL
+);
+
+INSERT INTO tbl_users 
+(`username`, `password`)
+VALUES 
+('maman', '$argon2id$v=19$m=65536,t=4,p=1$ZlVHdGNnejUybzJyYzF3cg$erdxiPjnXY3ZxfP8mxrj7ETtWv7D/ROcPr8lRC/k59k'), /* azer1234 */
+('papa', '$argon2id$v=19$m=65536,t=4,p=1$UUd0cUp6OVpzTE5QekloaA$Z1igb3NJr2lqr/FK+AJMLjEZMFewTxMA3al6+VU2d/Y'), /* baba0123! */
+('toto', '$argon2id$v=19$m=65536,t=4,p=1$NFhKOVEzTlVKVWh0c0tsUA$1YoRbCsjfhhsQynoxBdGSaKm4jnOyOjoHbh80BKZOR0'); /* my:PasswOrd */
